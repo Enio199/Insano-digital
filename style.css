@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dosis:wght@300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(228, 228, 228);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* menu */
+
+.menu {
+    background-image: linear-gradient(to right, #4C35FC, #2592E6);
+    padding: 10px 0;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(128, 127, 127, 0.753);
+}
+
+.menu-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menu-logo {
+    font-family: 'Caveat', cursive;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu-logo2 {
+    font-family: 'Caveat', cursive;
+    display: none;
+}
+/*Tornando o logo responsivo para celular*/
+
+@media(max-width: 360px) {
+    .menu-logo {
+        display: none;
+    }
+
+    .menu-logo2 {
+        display: block;
+        float: left;
+        margin-left: 20px;
+    }
+}
+
+.menu-nav {
+    float: right;
+    margin-right: 10px;
+}
+
+.menu-nav01 {
+    float: right;
+    margin-right: 10px;
+    color: white;
+    font-size: 22px;
+    display: none;
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+.menu-nav a:hover {
+    background-color: #c325e6c7;
+}
+
+/*Botão de camadas*/
+.checkbtn{
+    color: white;
+    padding: 7px 13px;
+    font-size: 22px;
+    float: right;
+    line-height: 28px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 625px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+}
+
+/*corpo do site*/
+
+.intro {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.intro h3 {
+    color: #0a0a0a;
+}
+
+.imag01 li {
+    list-style: none;
+}
+
+/*Lista das imagens ancoradas*/
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Texto na frente da imagem*/
+
+.conteudo {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.conteudo::after, .conteudo::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.conteudo:hover {
+    background-color: #28fcc33d;
+    cursor: pointer;
+}
+
+.imag01 {
+    float: left;
+    max-width: 40%;
+}
+
+.noticia ul{
+    padding-left: 30px;
+    list-style-type: square;
+}
+
+.chamada {
+    float: left;
+    max-width: 500px;
+    margin-left: 25px;
+}
+
+/*Colocando a imagem e a chamada de forma responsiva*/
+
+@media(max-width: 625px) {
+    .conteudo {
+        display: block;
+        cursor: pointer;
+    }
+
+    .chamada {
+        text-align: justify;
+        margin-left: 0;
+    }
+
+    .imag01 {
+        max-width: 100%;
+        margin: 10px;
+    }
+} 
+
+/*Primeira noticia*/
+
+.uf {
+    padding: 10px 30px;
+    margin: auto;
+    min-height: 320px;
+    max-width: 860px;
+    text-align: justify;
+    font-family: 'Dosis', sans-serif;
+    background-color: #f7f4f4;
+    box-shadow: 1px 1px 10px darkgrey;
+    font-size: 20px;
+}
+
+.uf h1 {
+    margin: 20px 0;
+}
+
+.uf h3 {
+    margin: 10px 0;
+    font-weight: normal;
+    text-align: center;
+}
+
+.uf a {
+    text-decoration: none;
+    color: #FF0008;
+    font-weight: bold;
+}
+
+/*Reponsividade da imagem dentro da section*/
+.img02 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img02 img {
+    width: 100%;
+    height: 257;
+}
+
+/*Ajustando os paragrafos dentro da notícia*/
+
+.noticia {
+    margin-top: 50px;
+}
+
+.noticia p {
+    margin: 1em 0;
+}
+
+/*Lista suspensa*/
+
+.susp {
+    background-image: linear-gradient(to right, #4C35FC, #2592E6);
+    min-width: 100px;
+    min-height: 80px;
+    background-color: #017757c4;
+    float: right;
+    margin-right: 10px;
+    position: relative;
+    border: 2px solid #2592E6;
+    box-shadow: 1px 2px 4px #2592e694;
+    display: none;
+}
+.suspLink li {
+    padding: 5px 10px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.suspLink a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.suspLink li:hover {
+    background-color: #229fff;
+}
+
