@@ -41,6 +41,14 @@ body {
 .menu-logo2 {
     font-family: 'Caveat', cursive;
     display: none;
+    width: 60px;
+    height: 44px;
+}
+
+#logo {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 /*Tornando o logo responsivo para celular*/
 
