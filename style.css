@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dosis:wght@300&display=swap');
+
+:root {
+    --cor1: #4C35FC;
+    --cor2: #2592E6;
+    --cor3: #C225E6;
+    --cor4: #FF0008;
+    --cor5: #28FCC4;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -278,3 +287,60 @@ body {
     background-color: #229fff;
 }
 
+/*Configuração do footer*/
+
+.apresentacao {
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 100px;
+}
+
+.pai-redes {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    gap: 20px;
+    margin-left: 100px;
+    line-height: 100px;
+}
+
+.redes {
+    max-width: 30px;
+    height: 30px;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.redes:hover {
+    max-width: 35px;
+    height: 35px;
+}
+
+.redes img {
+    width: 100%;
+    border-radius: 40%;
+}
+
+.copy {
+    float: right;
+    margin-right: 100px;
+    color: white;
+}
+
+/*footer responsivo*/
+
+@media(max-width: 560px) {
+    .apresentacao {
+        display: grid;
+    }
+
+    .pai-redes {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+
+    .copy {
+        text-align: -webkit-center;
+        margin: 25px;
+        margin-top: 40px;
+    }
+}
