@@ -233,6 +233,7 @@ body {
     text-decoration: none;
     color: #FF0008;
     font-weight: bold;
+    overflow-wrap: break-word;
 }
 
 /*Reponsividade da imagem dentro da section*/
