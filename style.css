@@ -96,10 +96,17 @@ body {
     color: white;
     font-size: 1.125em;
     text-decoration: none;
+    transition: background-color 1s, color .5s;
+    border-radius: 10px;
 }
 
 .menu-nav a:hover {
-    background-color: #c325e6c7;
+    color: var(--cor1);
+    background-color: rgb(226, 224, 224);
+}
+
+.menu-nav a:active {
+    box-shadow: 1px 2px 5px rgb(228, 227, 227);
 }
 
 /*Botão de camadas*/
@@ -168,6 +175,7 @@ body {
 .conteudo:hover {
     background-color: #28fcc33d;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .imag01 {
